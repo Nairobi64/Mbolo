@@ -1,0 +1,21 @@
+.container{
+    width: 300px;
+    height: 280px;
+    align-items: center;
+    text-align: center;
+    border: 1px solid;
+    padding: 20px;
+    border-radius: 7px;
+    margin: 10px;
+
+
+}
+img{
+    width: 40%;
+   
+}
+.bloc{
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+}

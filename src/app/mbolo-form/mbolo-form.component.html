@@ -1,0 +1,38 @@
+
+<div class="preview-card" *ngIf="addProdPreview$ | async as article">
+    <h2>{{ article.title | uppercase }}</h2>
+    <img [src]="article.ImageUrl" [alt]="article.title">
+    <p>{{ article.Description }}</p>
+    <p *ngIf="article.Prix">{{ article.Prix }}</p>
+</div>
+
+<div class="form-card">
+<h2>Nouveau produit</h2>
+
+<form [formGroup]="myform">   
+    <div class="form-group">
+        <label for="title">Titre</label>
+        <input id="title" type="text" formControlName="title">
+    </div>
+    <div class="form-group">
+        <label for="ImageUrl">URL de l'image</label>
+        <input id="ImageUrl" type="text" formControlName="ImageUrl">
+    </div>
+    <div class="form-group">
+        <label for="Description">Description</label>
+        <textarea id="Description" type="text" formControlName="Description" rows="4">
+        </textarea>
+    </div>
+    <div class="form-group">
+        <label for="Prix">Prix</label>
+        <input id="Prix" type="number" formControlName="Prix">
+    </div>
+
+    <div class="action-buttons">
+        <button type="submit" (click)="onSubmitForm()" [disabled]="myform.invalid">Enregistrer</button>
+    </div>
+</form>
+
+</div>
+
+

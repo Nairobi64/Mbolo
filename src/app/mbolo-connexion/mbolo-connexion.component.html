@@ -1,0 +1,25 @@
+<form >   
+
+    <div class="container">
+        <div class="information">
+            <h2>Bienvenue en Mbolo</h2>
+            <p>Faites vos courses a moindre couts.</p>
+        </div>
+
+        <div class="bloc" [formGroup]="group">
+           
+            <input id="email" type="email" formControlName="email" placeholder="Votre Email" required>
+        </div>
+        <div class="bloc">
+            
+            <input id="password" type="password" formControlName="password" placeholder="Mot de passe" required>
+        </div>
+        
+        
+    </div>
+
+    <div class="action-buttons">
+        <a routerLink="articlex">Se connecter</a>
+    </div>
+    
+</form>

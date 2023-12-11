@@ -1,0 +1,15 @@
+.container{
+    
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmfEDb26I13-jdbV8RHzH_-vCWJynE3X2CxX8rEuJCdLcGWiW7It3NhOo19S-NWD1g-wA&usqp=CAU');
+    height: 400px;
+    margin-bottom: 40px;
+}
+ h2{
+    top: 50px;
+   
+    color: #fff;
+}
+

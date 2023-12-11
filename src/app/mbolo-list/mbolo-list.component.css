@@ -1,0 +1,7 @@
+.list-card{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: aqua;
+    
+}

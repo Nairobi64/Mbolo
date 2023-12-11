@@ -1,0 +1,38 @@
+.container{
+    width: 50%;
+    margin:auto;
+    align-items: center;
+    text-align: center;
+    border: 1px solid;
+    padding: 20px;
+    border-radius: 7px;
+    background-color: aqua;
+
+
+}
+img{
+    width: 35%;
+   
+}
+.bloc{
+    align-items: center;
+    text-align: center;
+}
+/* bouttons */
+.main{
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+.btn{
+    margin-top: 30px;
+}
+
+.update{
+    background-color: greenyellow;
+
+
+}
+.delete{
+    background-color: red;
+}
