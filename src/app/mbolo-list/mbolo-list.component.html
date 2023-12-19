@@ -1,8 +1,7 @@
 
 <app-baniere-list></app-baniere-list>
-<!-- <app-unique-page></app-unique-page> -->
 <div class="container">
     <div class="list-card">
-        <app-mbolo-prod *ngFor="let cpt of articles$ | async " [article]="cpt"></app-mbolo-prod>
+        <app-mbolo-prod *ngFor="let cpt of article$ | async " [article]="cpt"></app-mbolo-prod>
     </div>
 </div>

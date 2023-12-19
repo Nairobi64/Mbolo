@@ -13,13 +13,13 @@ import { Observable } from 'rxjs';
 export class MboloListComponent implements OnInit {
   
   // articlex!: Produit[];
-  articles$!: Observable<Produit[]>;
+  article$!: Observable<Produit[]>;
 
   constructor(private articlesServices: MboloService){}
 
   ngOnInit(): void {
 
-    this.articles$ = this.articlesServices.getAllArticle()
+    this.article$ = this.articlesServices.getAllArticle();
    
 
   }

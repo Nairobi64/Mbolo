@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder , Validators} from '@angular/forms';
 import { Produit } from '../models/modele';
-import {Observable, pipe} from 'rxjs'
-import {map,tap} from 'rxjs/operators'
+import {Observable,tap} from 'rxjs'
+import {map} from 'rxjs/operators'
 import { MboloService } from '../services/mbolo-services';
 import { Router } from '@angular/router';
 
@@ -35,6 +35,7 @@ export class MboloFormComponent implements OnInit{
     this.addProdPreview$ = this.myform.valueChanges.pipe(
       map(formValue => ({
         ...formValue,
+        id:0
       }))
     );
     
@@ -42,8 +43,9 @@ export class MboloFormComponent implements OnInit{
   }
   
   onSubmitForm() {
-    this.articlesServices.addProduct(this.myform.value);
-    this.router.navigateByUrl('/articlex');
+    this.articlesServices.addProduct(this.myform.value).pipe(
+      tap(() => this.router.navigateByUrl('/articlex'))
+  ).subscribe();
 
     
 }
